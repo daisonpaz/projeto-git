@@ -57,44 +57,60 @@ Em resumo, **Git é a ferramenta de versão em si**, enquanto **GitHub é um ser
 5. **`git remote add origin <link>`**: Adiciona um repositório remoto, que é o endereço onde o código será armazenado (como no GitHub).
 6. **`git push origin <branch>`**: Envia as alterações da branch local para o repositório remoto.
 
-[[Voltar]](#referencias)
+[[Voltar]](#-referências)
 
 ### Resumo de GIT: Minicurso para sair do zero
 O mini curso de Git ensina a versionar códigos. Com comandos práticos, o curso aborda desde a configuração inicial até o uso de branches, merges e rebase. O objetivo é facilitar o aprendizado e a recuperação de códigos, promovendo um desenvolvimento organizado e colaborativo.
 
 #### Destaques:
-**00:09** Aprender a usar o Git é essencial para programadores, pois permite versionar códigos e facilitar a recuperação de dados. A prática de versionamento ajuda a evitar erros durante o desenvolvimento.  
-O Git foi criado para facilitar o controle de versões e colaborar em projetos, permitindo que múltiplos desenvolvedores trabalhem sem conflitos. É uma ferramenta fundamental no desenvolvimento software.  
-A instalação do Git é simples e pode ser feita em diferentes sistemas operacionais, garantindo que você possa utilizá-lo independentemente do ambiente. Isso torna o Git acessível a todos os programadores.  
+1- Introdução\
+Aprender a usar o Git é essencial para programadores, pois permite versionar códigos e facilitar a recuperação de dados. A prática de versionamento ajuda a evitar erros durante o desenvolvimento.  
+O Git foi criado para facilitar o controle de versões e colaborar em projetos, permitindo que múltiplos desenvolvedores trabalhem sem conflitos.  
+A instalação do Git é simples e pode ser feita em diferentes sistemas operacionais, garantindo que você possa utilizá-lo independentemente do ambiente.
+
+2- Primeiros Comandos  
 Comandos básicos como 'git init' e 'git clone' são essenciais para iniciar e gerenciar repositórios. Esses comandos ajudam a organizar e versionar projetos de forma eficiente.  
-**06:03** O Git possui dois estágios importantes antes de versionar os arquivos no repositório. É necessário indexar os arquivos e, em seguida, confirmar as alterações para criar um histórico.  
+
+3 - Dois estágios  
+O Git possui dois estágios importantes antes de versionar os arquivos no repositório. É necessário indexar os arquivos e, em seguida, confirmar as alterações para criar um histórico.  
 A primeira etapa no uso do Git é a organização dos arquivos que irão para o repositório, conhecida como Stage ou palco. Essa fase permite modificar arquivos sem afetar o repositório ainda.  
 Após indexar os arquivos, a próxima etapa é a confirmação, que efetivamente salva as alterações no repositório. Isso cria um histórico de mudanças e permite rastrear versões anteriores.  
-O comando Git status é fundamental para visualizar o estado dos arquivos entre o working directory e o Stage. Ele ajuda a identificar quais arquivos estão prontos para serem versionados.  
-**12:05** Os commits são essenciais para registrar as alterações em um projeto, mostrando quem fez cada modificação e quando. Isso é fundamental para entender a evolução do código ao longo do tempo.  
+O comando Git status é fundamental para visualizar o estado dos arquivos entre o working directory e o Stage. Ele ajuda a identificar quais arquivos estão prontos para serem versionados. 
+
+4- Commit  
+Os commits são essenciais para registrar as alterações em um projeto, mostrando quem fez cada modificação e quando. Isso é fundamental para entender a evolução do código ao longo do tempo.  
 O comando Git commit é utilizado para salvar as mudanças no repositório, acompanhado de uma mensagem que descreve o que foi alterado. Isso ajuda outros desenvolvedores a entenderem o contexto das mudanças.  
 É importante prestar atenção ao usar comandos como 'git commit -a -m', pois ele adiciona automaticamente todos os arquivos modificados. Isso pode incluir alterações indesejadas se não for cuidadosamente revisado.  
 Mensagens de commit devem ser claras e informativas, evitando termos vagos como 'Fix' ou 'Update'. Usar padrões como 'Added' ou 'Changed' ajuda a manter um histórico mais compreensível e útil.  
-**18:08** O uso de branches no Git permite que os desenvolvedores realizem alterações sem afetar o código principal. Essa prática facilita o trabalho em equipe e a organização do desenvolvimento.  
+
+5 - [Branches](#o-que-são-branches)  
+O uso de branches no Git permite que os desenvolvedores realizem alterações sem afetar o código principal. Essa prática facilita o trabalho em equipe e a organização do desenvolvimento.  
 As branches funcionam como caminhos alternativos para o desenvolvimento, permitindo criar ambientes separados para testar alterações. Isso evita impactos diretos no branch principal.  
 A criação de branches novas é simples e pode ser feita de várias formas, como através de comandos específicos. Isso proporciona flexibilidade na organização do código.  
 É importante manter as branches atualizadas com o branch principal para evitar conflitos durante a mesclagem. Essa prática garante um desenvolvimento mais fluido e eficiente.  
-**24:11** O vídeo explica como utilizar repositórios remotos no GitHub, enfocando comandos como 'git remote', 'git push' e 'git pull'. Esses comandos são essenciais para sincronizar mudanças entre repositórios locais e remotos.  
+
+6 - Repositórios Remotos  
+Já no GitHub, enfocando comandos como 'git remote', 'git push' e 'git pull'. Esses comandos são essenciais para sincronizar mudanças entre repositórios locais e remotos.  
 A adição e remoção de repositórios remotos é simples com os comandos 'git remote add' e 'git remote remove', permitindo fácil gerenciamento. Isso ajuda a manter o controle sobre diferentes origens de código.  
 O uso do comando 'git pull' é fundamental para integrar alterações de outros colaboradores antes de fazer um 'git push', evitando conflitos. A prática de sincronizar frequentemente é recomendada.  
+
+7 - [Merge e Rebase](#diferença-entre-merge-e-rebase)  
 Entender como realizar 'merge' e 'rebase' é crucial para unir mudanças em diferentes branches, prevenindo conflitos. Essas operações garantem que o código esteja sempre atualizado e funcional.  
-**30:14** O rebase é uma alternativa ao merge no Git, permitindo integrar mudanças de uma branch para outra de forma linear. Ele altera o histórico dos commits, o que pode ser útil para manter um histórico mais limpo.  
+O rebase é uma alternativa ao merge no Git, permitindo integrar mudanças de uma branch para outra de forma linear. Ele altera o histórico dos commits, o que pode ser útil para manter um histórico mais limpo.  
 A diferença principal entre merge e rebase é que o merge preserva o histórico completo, enquanto o rebase cria uma linha do tempo mais linear. Isso ajuda a evitar confusões em projetos complexos.  
 Ao utilizar rebase, é importante ter cuidado, especialmente em branches públicas, pois altera o histórico e pode causar conflitos. Sempre verifique se não há alterações não integradas antes de realizar o rebase.  
+
+8 - Tags  
 As tags no Git são utilizadas para marcar versões específicas no histórico do repositório. Elas podem ser leves ou anotadas, sendo as anotadas mais recomendadas para lançamentos.  
-**36:17** As tags no Git são essenciais para marcar versões específicas de um projeto, facilitando o rastreamento e o gerenciamento de alterações. Elas permitem que desenvolvedores identifiquem rapidamente versões e mudanças significativas no código.  
+As tags no Git são essenciais para marcar versões específicas de um projeto, facilitando o rastreamento e o gerenciamento de alterações. Elas permitem que desenvolvedores identifiquem rapidamente versões e mudanças significativas no código.  
 As tags ajudam a rastrear versões de lançamento do software, como v1.0 ou v2.1, permitindo que outros usuários referência essas versões de forma prática.  
 Tags podem destacar estados importantes do código, como grandes mudanças ou correções de bugs, fornecendo um histórico claro de progresso e problemas resolvidos.  
-Tags assinadas oferecem segurança adicional ao permitir que outros verifiquem a autenticidade da tag, garantindo que ela foi criada por um membro confiável da equipe.  
-**42:19** O Git stash é uma ferramenta útil para salvar mudanças temporárias enquanto você muda de branch. Ele permite que você recupere essas alterações posteriormente, evitando perda de dados.  
+Tags assinadas oferecem segurança adicional ao permitir que outros verifiquem a autenticidade da tag, garantindo que ela foi criada por um membro confiável da equipe. 
+
+9 - Git Stash   
+O Git stash é uma ferramenta útil para salvar mudanças temporárias enquanto você muda de branch. Ele permite que você recupere essas alterações posteriormente, evitando perda de dados.  
 A diferença entre os comandos Git stash apply e Git stash pop é essencial para gerenciar suas alterações. O apply mantém as mudanças no stash, enquanto o pop as remove completamente.  
 Reverter alterações em um repositório remoto requer um Git push com o parâmetro Force. Isso é útil para desfazer commits que já foram enviados para o repositório.  
-A documentação do Git é uma excelente fonte para aprender mais sobre comandos avançados. O uso do help no terminal também pode ser uma forma eficaz de obter assistência.  
 
 #### Principais comandos
 Os principais comandos do Git incluem:
@@ -113,10 +129,8 @@ Os principais comandos do Git incluem:
 12. **`git tag <nome>`**: Marca uma versão específica no histórico do repositório.
 
 Esses comandos são fundamentais para gerenciar versões e colaborar em projetos de software.
-
-O conceito de branches (ramificações) no Git permite que você trabalhe em diferentes linhas de desenvolvimento de maneira isolada e organizada. Aqui está um resumo de como funciona:
-
 #### O que são Branches?
+O conceito de branches (ramificações) no Git permite que você trabalhe em diferentes linhas de desenvolvimento de maneira isolada e organizada. Aqui está um resumo de como funciona:
 
 - **Definição**: Uma branch é uma versão paralela do seu repositório. Usá-las permite que você faça alterações em uma linha de desenvolvimento sem afetar a branch principal, geralmente chamada de "main" ou "master".
 
@@ -230,7 +244,7 @@ A diferença entre **merge** e **rebase** no Git está principalmente na forma c
    git checkout nova-funcionalidade
    git rebase main
    ``` 
-   [[Voltar]](#referencias)
+   [[Voltar]](#-referências)
 ### Resumo de Curso de Git e Github Completo 2024
 O **Git** é um sistema de controle de versão distribuído que permite que desenvolvedores acompanhem e gerenciem mudanças em projetos de software ao longo do tempo. Aqui estão os conceitos principais sobre o Git e por que ele é importante:
 
@@ -253,10 +267,10 @@ O **Git** é um sistema de controle de versão distribuído que permite que dese
 
 5. **Comunidade e Ecossistema**: Git é suportado por uma ampla gama de ferramentas e plataformas, como GitHub, GitLab e Bitbucket, que oferecem funcionalidades adicionais para colaboração, integração contínua e gerenciamento de projetos.
 
-[[Voltar]](#referencias)
+[[Voltar]](#-referências)
 
 
-### Resumo de Entendendo Git | (não é um tutorial!
+### Resumo de Entendendo Git | (não é um tutorial!)
 
 O **Git** é uma ferramenta fundamental para desenvolvedores, e sua importância pode ser destacada em vários aspectos:
 
@@ -286,7 +300,7 @@ Git se integra bem com diversas plataformas como GitHub, GitLab e Bitbucket, fac
 
 Em resumo, o Git é essencial para o desenvolvimento moderno, pois melhora a colaboração, facilita o manejo de versões, garante segurança e integridade, e permite que desenvolvedores trabalhem de forma mais produtiva e organizada. Sua adoção se tornou um padrão na indústria de software, e dominar o Git é uma habilidade indispensável para qualquer desenvolvedor.
 
-[[Voltar]](#referencias)
+[[Voltar]](#-referências)
 
 
 
